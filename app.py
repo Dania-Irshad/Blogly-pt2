@@ -76,7 +76,7 @@ def delete_user(user_id):
 
 @app.route("/users/<int:user_id>/posts/new")
 def new_post(user_id):
-    """Display details of the user's post"""
+    """Display new post form"""
     user = User.query.get_or_404(user_id)
     return render_template("posts/new.html", user=user)
 
