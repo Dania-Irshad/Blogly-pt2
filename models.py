@@ -55,5 +55,3 @@ class Post(db.Model):
         """Show info about post."""
         p = self
         return f"<Post {p.id} {p.title} {p.content} {p.created_at} {p.user_id}>"
-
-#"%A %b %-d %Y, %I:%M%p"
